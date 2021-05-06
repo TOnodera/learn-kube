@@ -1,6 +1,11 @@
 #!/bin/bash
 #githubからコンテナにコンテンツ配送
 
+save(){
+    exit 0
+}
+trap save TERM
+
 
 if [ -z $CONTENTS_SOURCE_URL ]
 then
