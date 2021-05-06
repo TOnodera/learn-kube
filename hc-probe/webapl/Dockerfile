@@ -7,4 +7,4 @@ ADD ./package.json /
 RUN npm install
 ADD ./webapl.js /
 
-CMD ['node',"/webapl.js"]
+CMD ["node","/webapl.js"]

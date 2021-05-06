@@ -2,19 +2,19 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: webapl
-spec:
+spec: 
   containers:
-    - name: webapl
+  - name: webapl
     image: takeshi1215/webapl:0.1
     livenessProbe:
       httpGet:
         path: /healthz
         port: 3000
-      initialDeleySecounds: 3
-      periodSecounds: 5
+      initialDelaySeconds: 3
+      periodSeconds: 5
     readinessProbe:
       httpGet:
         path: /ready
         port: 3000
-      initialDeleySecounds: 15
-      periodSecounds: 6
+      initialDelaySeconds: 15
+      periodSeconds: 6
